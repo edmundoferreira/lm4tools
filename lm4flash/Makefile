@@ -17,4 +17,11 @@ $(EXE): $(EXE).c
 clean:
 	rm -f *.o $(EXE)
 
+install:
+	cp $(EXE) /usr/bin/
+
+uninstall:
+	rm -f /usr/bin/$(EXE)
+
+
 .PHONY: all clean
